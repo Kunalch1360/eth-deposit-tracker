@@ -117,9 +117,7 @@ const DepositList: React.FC = () => {
                   </Link>
                 </TableCell>
                 <TableCell>
-                  <Link href={`https://etherscan.io/address/${deposit.pubKey}`}>
                     {formatAddress(deposit.pubKey)}
-                  </Link>
                 </TableCell>
                 {/* <TableCell>
                   {deposit?.internalTransactions?.length > 0 ? (
