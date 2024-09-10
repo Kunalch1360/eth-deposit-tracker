@@ -53,7 +53,7 @@ const DepositList: React.FC = () => {
   useEffect(() => {
     const fetchDeposits = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/deposits"); // Replace with your actual API endpoint
+        const response = await axios.get("http://localhost:3000/api/deposits"); // Replace with your actual API endpoint
         setDeposits(response.data);
         setLoading(false);
       } catch (error) {
